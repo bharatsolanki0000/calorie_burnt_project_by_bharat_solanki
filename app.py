@@ -32,10 +32,10 @@ name=st.text_input("Enter your name")
 age=st.number_input("Enter your age ", min_value=10, max_value=90, step=1, value=20)
 gender=st.radio("Choose your gender",["Male","Female"])
 heat_rate=st.number_input("Enter heartbeat rate in bpm",min_value=60, max_value=120, step=1,value=90 )
-body_temp=st.number_input("Enter body temperature in Celsius",min_value=37.0, max_value=42.0, value=38.0, step=0.1 )
+body_temp=st.number_input("Enter body temperature in Celsius",min_value=36.0, max_value=40.0, value=37.0, step=1.0 ,format="%.2f")
 duration=st.number_input("Enter duration of Exercise in minutes",min_value=1,max_value=120,value=20, step=1)
-height=st.number_input("Enter your height in cm",min_value=140,max_value=210,value=170, step=1)
-weight=st.number_input("Enter weight in kg",min_value=40.0,max_value=150.0,value=65.0, step=0.1)
+height=st.number_input("Enter your height in cm",min_value=140.0,max_value=210.0,value=170.0, step=0.1,format="%.2f")
+weight=st.number_input("Enter weight in kg",min_value=40.0,max_value=150.0,value=65.0, step=0.1,format="%.2f")
 
 submit=st.button("SUBMIT!!")
 
